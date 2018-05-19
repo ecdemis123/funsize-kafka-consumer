@@ -1,0 +1,8 @@
+---
+:runtime:
+- org.slf4j:slf4j-api:jar:1.7.25
+- org.xerial.snappy:snappy-java:jar:1.1.7.1
+- org.lz4:lz4-java:jar:1.4
+- org.yaml:snakeyaml:jar:1.14
+- org.slf4j:slf4j-simple:jar:1.8.0-beta2
+- org.apache.kafka:kafka-clients:jar:1.1.0
