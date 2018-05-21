@@ -11,6 +11,12 @@ class Consumer
 
   def subscribe(topic_name = 'testing123')
     @consumer.subscribe([topic_name])
+    while true
+      messages = @consumer.poll(100)
+      messages.each do |msg|
+        puts "offset: #{msg.offset}, key: #{msg.key}, value: #{msg.value}"
+      end
+    end
   end
 end
 
